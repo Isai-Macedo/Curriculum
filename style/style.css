@@ -3,32 +3,65 @@
 :root{
     --SizeFont1: 1.1rem;
     --SizeFont2: 0.9rem;
-    --SizeFont3: 1.5rem;
+    --SizeFont3: 0.1rem;
 
-    --BackGroundGris: #f4f4f4;
+    --ColorFont1: #f0f0f0;
+    --ColorFont2: #333;
+    --ColorFont3: #bdbcbc;
+    --BackGround1: #c5c4c4d7;
+    --BackGround2: #2a3f55;
+
+    --FontSize1: "Montserrat", sans-serif;
 }
 
 body {
-    background-color: var(--BackGroundGris);
-    color: #333;
-    font-family: "Montserrat", sans-serif;
+    background-color: var(--BackGround1);
     font-optical-sizing: auto;
+    font-family: var(--FontSize1);
     font-style: normal;
     margin: 1%;
     padding: 1%;
 }
 
+.card{
+    background-color: var(--BackGround2);
+    font-family: var(--FontSize1);
+}
+
+h1{
+    font-size: var(--SizeFont2);
+}
+
+i{
+    font-size: 1.5rem;
+    opacity: 30%;
+}
+
+i:hover{
+    color: var(--ColorFont1);
+    opacity: 100%;
+}
+
+/*
 header {
     border-radius: 10px;
-    background-color: #2a3f55;
-    color: rgb(231, 231, 231);
-    text-align: center;
-    padding: 3%;
+    color: var(--ColorTexto1);
+    padding: 1%;
+}
+
+.headerFotoPerfil{
+    height: 10rem;
+    margin-top: 10px;
 }
 
 .container {
     max-width: 90%;
     margin: 0 auto;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: var(--SizeFont3);
 }
 
 .profile-img {
@@ -37,10 +70,7 @@ header {
     margin-top: 10px;
 }
 
-h1 {
-    margin: 10px 0;
-    font-size: var(--SizeFont3);
-}
+
 
 main {
     margin: 20px;
@@ -82,7 +112,7 @@ footer {
     color: #333;
     filter: invert(1.1rem);
 }
-
+*/
  @media (max-width: 768px) {
       .container{
         width: 100%;
@@ -90,7 +120,7 @@ footer {
       }
 
       h1{
-        font-size: 1rem;
+        font-size: 3rem;
       }
 
       .ConteinerPefil{
