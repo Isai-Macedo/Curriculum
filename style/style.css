@@ -119,6 +119,22 @@ section[role=main] h3 {
   font-size: var(--TamanioFuente2);
   color: var(--ColorVerde);
 }
+
+.headerRedesSociales{
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.headerIconoRedesSociales{
+  margin: 1rem;
+  font-size: 2rem;
+  color: var(--ColorNegro);
+  opacity: 50%;
+}
+
+.headerIconoRedesSociales:hover{
+  opacity: 100%;
+}
 /*
 .experiences ul, .training ul {
   padding: 0px;
@@ -386,5 +402,11 @@ section[role=main] h4 strong {
 
     .container_16 .grid_8 {
         width: 95%;
+    }
+
+    .headerIconoRedesSociales{
+      margin: 0.5rem;
+      font-size: 1.5rem;
+      opacity: 100%;
     }
 }
