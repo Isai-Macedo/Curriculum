@@ -15,7 +15,7 @@
     --TamanioFuente1: 0.9rem;
     --TamanioFuente2: 1.1rem;
     --TamanioFuente3: 1.5rem;
-    --TamanioFuente4: 0.6rem;
+    --TamanioFuente4: 0.7rem;
 }
 
 body {
@@ -49,6 +49,11 @@ body {
 /**********
 /* Header
 **********/
+.descargaPdf{
+  text-align: right;
+  padding: 1rem;
+  margin: 0;
+}
 
 header {
     background: var(--ColorAzul);
