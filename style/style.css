@@ -50,9 +50,26 @@ body {
 /* Header
 **********/
 .descargaPdf{
-  text-align: right;
-  padding: 1rem;
-  margin: 0;
+  margin: 0.8rem;
+  top: 0;
+  position: absolute;
+  right: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.descargaPdfP{
+  font-size: var(--TamanioFuente1);
+  color: var(--ColorGris);
+  text-decoration: none;
+  text-align: center;
+}
+
+#descargaPdfBi{
+  font-size: 2rem;
+  display: block;
 }
 
 header {
@@ -427,5 +444,13 @@ section[role=main] h4 strong {
       margin: 0 0.5rem 0 0;
       padding: 0;
       font-size: 1.2rem;
+    }
+
+    .descargaPdfP{
+      font-size: var(--TamanioFuente4);
+    }
+
+    #descargaPdfBi{
+      font-size: 1.5rem;
     }
 }
