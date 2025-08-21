@@ -1,129 +1,390 @@
+/* Fuente de Google */
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 :root{
-    --SizeFont1: 1.1rem;
-    --SizeFont2: 0.9rem;
-    --SizeFont3: 0.1rem;
+    --ColorAzul: #2a3f55;
+    --ColorGris: #e0e0e0;
+    --ColorVerde: #2A5455;
+    --ColorMorado: #2B2A55;
+    --ColorNegro: #070707c7;
 
-    --ColorFont1: #f0f0f0;
-    --ColorFont2: #333;
-    --ColorFont3: #bdbcbc;
-    --BackGround1: #c5c4c4d7;
-    --BackGround2: #2a3f55;
+    --FuenteTipografica: "Montserrat", sans-serif;
 
-    --FontSize1: "Montserrat", sans-serif;
+    --TamanioFuente1: 0.9rem;
+    --TamanioFuente2: 1.1rem;
+    --TamanioFuente3: 1.5rem;
+    --TamanioFuente4: 0.6rem;
 }
 
 body {
-    background-color: var(--BackGround1);
-    font-optical-sizing: auto;
-    font-family: var(--FontSize1);
-    font-style: normal;
-    margin: 1%;
-    padding: 1%;
+  margin: 0
 }
 
-.card{
-    background-color: var(--BackGround2);
-    font-family: var(--FontSize1);
+.container_16 {
+	max-width: 860px;
+	width: 90%;
+	margin: 0 auto;
 }
 
-h1{
-    font-size: var(--SizeFont2);
+.grid_8,
+.grid_16 {
+	display: inline;
+	float: left;
+	position: relative;
+	margin-left: 1%;
+	margin-right: 1%;
 }
 
-i{
-    font-size: 1.5rem;
-    opacity: 30%;
+.container_16 .grid_8 {
+	width: 45.0%;
+    margin-right: 30px;
 }
 
-i:hover{
-    color: var(--ColorFont1);
-    opacity: 100%;
+.container_16 .grid_16 {
+	width: 98.0%;
 }
 
-/*
+/**********
+/* Header
+**********/
+
 header {
-    border-radius: 10px;
-    color: var(--ColorTexto1);
-    padding: 1%;
-}
-
-.headerFotoPerfil{
-    height: 10rem;
-    margin-top: 10px;
-}
-
-.container {
-    max-width: 90%;
-    margin: 0 auto;
-}
-
-h1 {
-    margin: 10px 0;
-    font-size: var(--SizeFont3);
-}
-
-.profile-img {
-    border-radius: 10px;
-    height: 120px;
-    margin-top: 10px;
-}
-
-
-
-main {
-    margin: 20px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-h2 {
-    border-bottom: 2px solid #2a3f55;
-    padding-bottom: 5px;
-    font-size: var(--SizeFont1);
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-.about, .experience, .containerPefil{
-    font-size: var(--SizeFont2);
-}
-
-footer {
-    border-radius: 10px;
-    background-color: #2a3f55;
-    color: rgb(231, 231, 231);
+    background: var(--ColorAzul);
+    overflow: hidden;
     text-align: center;
-    padding: 20px;
 }
 
-.containerRedesSociales{
-    display: inline-block;
-    width: 30px;
-    color: #333;
-    filter: invert(1.1rem);
+header figure {
+    float: center;
 }
-*/
- @media (max-width: 768px) {
-      .container{
-        width: 100%;
-        margin: 0 auto;
-      }
 
-      h1{
-        font-size: 3rem;
-      }
+header figure img {
+    border-radius: 0.5rem;
+    width: 55%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
 
-      .ConteinerPefil{
-        font-size: 0.8rem;
-      }
+header hgroup {
+    float: right;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+header hgroup h1 {
+    color: var(--ColorGris);
+    font-family: var(--FuenteTipografica);
+    font-size: var(--TamanioFuente3);
+    margin: 0;
+    padding: 0;
+}
+
+header hgroup h5 {
+    color: var(--ColorGris);
+    font-family: var(--FuenteTipografica);
+    font-size: var(--TamanioFuente1);
+    margin: 0;
+    padding: 0;
+}
+
+/***************
+/* Main section
+***************/
+
+p {
+  font-family: var(--FuenteTipografica);
+  font-size: var(--TamanioFuente1);
+  text-align: justify;
+  color: var(--ColorNegro);
+}
+
+section[role=main] {
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+section[role=main] > div {
+  font-family: var(--FuenteTipografica);
+  font-size: var(--TamanioFuente1);
+  color: var(--ColorNegro);
+}
+
+section[role=main] h3 {
+  position: relative;
+  font-family: var(--FuenteTipografica);
+  font-size: var(--TamanioFuente2);
+  color: var(--ColorVerde);
+}
+/*
+.experiences ul, .training ul {
+  padding: 0px;
+}
+
+section[role=main] h4 {
+  margin-bottom: 0px;
+}
+
+section[role=main] h4 strong {
+  color: #147393;
+  font-weight: normal;
+  font: 400 17px oswald, sans-serif;
+}
+
+.experiences li, .training li {
+  margin-bottom: 35px;
+  list-style: none;
+}*/
+
+/**************
+/* Knowledge 
+***************/
+
+/*.knowledge .values {
+  padding: 0px;
+}
+
+.knowledge .values li {
+  margin-bottom: 21px;
+  position: relative;
+  list-style: none;
+  font: 400 14px oswald, sans-serif;
+}
+
+.knowledge .values li:after {
+		background: #e1e1e1;
+		bottom: -4px;
+		content: ' ';
+		display: block;
+		height: 5px;
+		position: absolute;
+		width: 100%;
+	}
+
+.knowledge .values li span {
+  background: #33a4c9;
+  bottom: -4px;
+  content: ' ';
+  display: block;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  width: inherit;
+  z-index: 1;
+}
+
+.grid_8 ul {
+  padding: 15px;
+}
+
+.grid_8 ul li {
+  font: 400 15px oswald, sans-serif;
+  margin-bottom: 3px;
+  list-style: none;
+}
+
+.grid_8 .information li:before, .grid_8 .contact li:before {
+  content: '\2022';
+  font: 400 15px oswald, sans-serif;
+  margin-bottom: 3px;
+  display: block;
+  position: relative;
+  max-width: 0;
+  max-height: 0;
+  left: -15px;
+  top: 0;
+  color: #33a4c9;
+  font-size: 20px;
+}
+
+.grid_16
+
+.site {
+  background-position: 0 -2px;
+  color: #848484;
+  font: 400 15px oswald, sans-serif;
+}
+	
+.date {
+  background-position: 0 -22px;
+  color: #999;
+  font: 400 15px oswald, sans-serif;
+}
+
+.phone {
+  background-position: 0 -40px;
+}
+
+.mail {
+  background-position: 0 -58px;
+}
+
+.blog {
+  background-position: 0 -80px;
+}
+
+.socialmedia {
+
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+  margin: 10px 38px 25px 38px;
+}
+
+.formation1 {
+  float: left;
+}
+
+.formation2 {
+  float: right;
+}*/
+
+/**************
+/* Animaciones
+***************/
+
+.fadeInDown {
+  /* Chrome, Safari, Opera */
+  -webkit-animation: fadeInDown 4s; 
+  animation: fadeInDown 4s;
+}
+
+.fadeInUp {
+  /* Chrome, Safari, Opera */  
+  -webkit-animation: fadeInUp 4s; 
+  animation: fadeInUp 4s;
+}
+
+.fadeInUp2 {
+  /* Chrome, Safari, Opera */  
+  -webkit-animation: fadeInUp2 3.7s; 
+  animation: fadeInUp2 3.7s;
+}
+
+.fadeInLeft {
+  /* Chrome, Safari, Opera */  
+  -webkit-animation: fadeInLeft 4s; 
+  animation: fadeInLeft 4s;
+}
+
+.fadeInRight {
+  /* Chrome, Safari, Opera */  
+  -webkit-animation: fadeInRight 4s; 
+  animation: fadeInRight 4s;
+}
+
+.appear {
+  /* Chrome, Safari, Opera */
+  -webkit-animation: appear 6s; 
+  animation: appear 6s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeInDown {
+    0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeInUp2 {
+    0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeInRight {
+    0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes appear {
+    0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+    header hgroup h1 {
+        font-size: var(--TamanioFuente1);
     }
+
+    header hgroup h5 {
+        font-size: var(--TamanioFuente4);
+    }
+
+    p{
+        width: 100%;
+        font-size: var(--TamanioFuente4);
+    }
+
+    section[role=main] {
+        padding: 0;
+    }
+
+    section[role=main] h3 {
+        font-size: var(--TamanioFuente1);
+        margin: 0.7rem 0 0 0;
+        padding: 0;
+    }
+
+    .container_16 .grid_8 {
+        width: 95%;
+    }
+}
